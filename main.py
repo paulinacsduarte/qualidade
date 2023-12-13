@@ -1,10 +1,9 @@
-numero = int(input("Fatorial de: ") )
-
-resultado=1
-count=1
-
-while count <= numero:
-    resultado *= count
-    count += 1
-
-print(resultado)
+ 
+# função recursiva para calcular o fatorial de um número
+def fatorial(num):
+  if num <= 1:
+    return 1
+  else:
+    return num * fatorial(num - 1)
+ 
+# função principal do programa
